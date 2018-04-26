@@ -1,8 +1,8 @@
-FROM ckulka/rhodecode-rccontrol:1.16.0
+FROM ckulka/rhodecode-rccontrol:1.18.0
 LABEL maintainer="cyrill.kulka@gmail.com"
 
 ENV RC_APP		VCSServer
-ENV RC_VERSION	4.10.5
+ENV RC_VERSION	4.12.0
 
 RUN .rccontrol-profile/bin/rccontrol	\
 		install VCSServer				\
